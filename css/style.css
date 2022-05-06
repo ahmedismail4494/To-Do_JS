@@ -113,7 +113,7 @@
   cursor: pointer;
 }
 
-* body .ToDo .todo_container .tasks_content .task_box .finished {
+* body .ToDo .todo_container .tasks_content .finished {
   text-decoration: line-through;
 }
 
