@@ -1,0 +1,178 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* body {
+  font-family: sans-serif, 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
+}
+
+* body .ToDo {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+* body .ToDo .todo_container {
+  width: 50%;
+  height: auto;
+  margin: 30px auto 0;
+  background-color: #f6f6f6;
+  /* Small */
+  /* Medium */
+}
+
+@media (max-width: 767px) {
+  * body .ToDo .todo_container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 991px) {
+  * body .ToDo .todo_container {
+    width: 75%;
+  }
+}
+
+* body .ToDo .todo_container .tasks_add {
+  padding: 15px;
+  background-color: #009688;
+  position: relative;
+}
+
+* body .ToDo .todo_container .tasks_add .tasks_input {
+  display: inline-block;
+  width: calc(100% - 15px);
+  padding: 10px 15px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 20px;
+}
+
+* body .ToDo .todo_container .tasks_add .tasks_input:focus {
+  outline: none;
+}
+
+* body .ToDo .todo_container .tasks_add .tasks_plus {
+  position: absolute;
+  height: 43px;
+  width: 43px;
+  background-color: #fff;
+  right: 12px;
+  border-radius: 50%;
+  line-height: 43px;
+  text-align: center;
+  color: #009688;
+  cursor: pointer;
+  font-size: 30px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+* body .ToDo .todo_container .tasks_add .tasks_plus:hover {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+* body .ToDo .todo_container .tasks_content {
+  padding: 15px;
+}
+
+* body .ToDo .todo_container .tasks_content .inform .no_tasks_message {
+  color: #dd0000;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+* body .ToDo .todo_container .tasks_content .tasks {
+  font-weight: bold;
+}
+
+* body .ToDo .todo_container .tasks_content .tasks-buttons {
+  text-align: center;
+  padding-top: 10px;
+}
+
+* body .ToDo .todo_container .tasks_content .tasks-buttons button {
+  color: #fff;
+  font-weight: 18px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+* body .ToDo .todo_container .tasks_content .tasks-buttons .tasks_delet-all {
+  background-color: red;
+}
+
+* body .ToDo .todo_container .tasks_content .tasks-buttons .tasks_finish-all {
+  background-color: greenyellow;
+}
+
+* body .ToDo .todo_container .tasks_content span {
+  display: block;
+  background-color: #fff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+* body .ToDo .todo_container .tasks_content span:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+* body .ToDo .todo_container .tasks_content .task_box .delete {
+  float: right;
+  background-color: #e91e63;
+  padding: 4px 10px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+* body .ToDo .todo_container .tasks_content .finished {
+  text-decoration: line-through;
+}
+
+* body .ToDo .todo_container .tasks_stats .tasks_count {
+  width: 50%;
+  float: left;
+  padding: 10px;
+}
+
+* body .ToDo .todo_container .tasks_stats .tasks_completed {
+  width: 50%;
+  float: right;
+  padding: 10px;
+  text-align: right;
+}
+
+* body .ToDo .todo_container .tasks_stats .tasks_count span {
+  color: #fff;
+  padding: 1px 5px;
+  font-size: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: #e91e63;
+}
+
+* body .ToDo .todo_container .tasks_stats .tasks_completed span {
+  color: #fff;
+  padding: 1px 5px;
+  font-size: 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: #03a9f4;
+}
+/*# sourceMappingURL=style.css.map */
